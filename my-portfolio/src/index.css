@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ink: #0b0e14;
+  --color-ink-soft: #131722;
+  --color-panel: #171c28;
+  --color-line: #262c3b;
+  --color-fog: #edeff2;
+  --color-mist: #9aa3b5;
+  --color-signal: #3fe0c5;
+  --color-signal-dim: #2bb8a3;
+  --color-violet: #8b7fe8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-fog);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: var(--color-signal);
+    color: var(--color-ink);
+  }
+}
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-gradient {
+    background: linear-gradient(120deg, var(--color-signal), var(--color-violet));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-fade::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+
+  mask-image: radial-gradient(
+    ellipse 60% 60% at 50% 0%,
+    black 50%,
+    transparent 100%
+  );
+
+  pointer-events: none;
+  z-index: 0;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
