@@ -49,6 +49,6 @@ export const projects = [
     stack: ['React', 'Express.js', 'Framer Motion', 'GSAP', 'Firebase', 'MongoDB','Google Charts'],
     image: 'https://i.ibb.co.com/hxwsScZW/soon.jpg',
     live: '#',
-    github: '#',
+    github: 'https://github.com/princemahmood117/Ecom',
   },
 ]

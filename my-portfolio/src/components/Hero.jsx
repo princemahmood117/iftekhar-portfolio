@@ -37,7 +37,7 @@ export default function Hero() {
     <section
       id="hero"
       ref={scope}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden grid-fade"
+      className="relative mt-5 md:mt-0 min-h-screen flex items-center justify-center overflow-hidden grid-fade"
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center w-full">
         {/* LEFT: info */}
