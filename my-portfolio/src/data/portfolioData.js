@@ -47,7 +47,7 @@ export const projects = [
     title: 'Ecom Shop',
     description: 'An Ecommerce Site build with modern technologies. Includes admin  dashboard with Charts to preview daily and monthly earnings. Admin may add or remove product as per availability.',
     stack: ['React', 'Next Js', 'Express.js', 'Framer Motion', 'GSAP', 'Render', 'Vercel', 'Firebase', 'MongoDB','Google Charts'],
-    image: 'https://i.ibb.co.com/hxwsScZW/soon.jpg',
+    image: 'https://i.ibb.co.com/1Y7FftXt/all-Products.png',
     live: 'https://hello-mart-two.vercel.app',
     github: 'https://github.com/princemahmood117/HelloMart',
   },
