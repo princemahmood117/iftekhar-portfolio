@@ -51,4 +51,12 @@ export const projects = [
     live: 'https://hello-mart-two.vercel.app',
     github: 'https://github.com/princemahmood117/HelloMart',
   },
+  {
+    title: 'Campus Flow',
+    description: 'A Digital School Management System.',
+    stack: ['React', 'Next Js', 'Express.js', 'Framer Motion', 'GSAP', 'PostgreSQL', 'Prisma',],
+    image: 'https://i.ibb.co.com/kj5BCYc/ss.png',
+    // live: 'https://hello-mart-two.vercel.app',
+    github: 'https://github.com/princemahmood117/campus-flow',
+  },
 ]

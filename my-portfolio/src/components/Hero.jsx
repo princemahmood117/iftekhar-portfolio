@@ -66,7 +66,7 @@ export default function Hero() {
             thoughtful animation.
           </motion.p>
 
-       <motion.div variants={item} className="flex flex-wrap gap-4 mb-10">
+          <motion.div variants={item} className="flex flex-wrap gap-4 mb-10">
             <a
               href="#projects"
               className="bg-signal text-ink font-mono text-sm font-semibold px-6 py-3 rounded-full hover:bg-signal-dim transition-colors"
